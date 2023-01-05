@@ -64,6 +64,10 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.2.vendor \
     android.hardware.drm@1.3.vendor
 
+# fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
