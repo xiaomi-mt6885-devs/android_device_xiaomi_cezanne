@@ -39,6 +39,7 @@ PRODUCT_PACKAGES += \
     meta_init.project.rc \
     multi_init.rc \
     init.sensor_2_0.rc \
+    init.cezanne.rc \
     init.connectivity.rc \
     meta_init.connectivity.rc \
     factory_init.rc \
