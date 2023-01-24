@@ -346,5 +346,9 @@ PRODUCT_PACKAGES += \
     libkeystore-wifi-hidl \
     libkeystore-engine-wifi-hidl
 
+PRODUCT_PACKAGES += \
+    WifiResCommon \
+    TetheringResCommon
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/cezanne/cezanne-vendor.mk)
