@@ -174,6 +174,9 @@ PRODUCT_BOOT_JARS += \
     mediatek-telephony-base \
     mediatek-telephony-common
 
+PRODUCT_PACKAGES += \
+    libshim_vtservice
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
