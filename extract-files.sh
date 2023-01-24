@@ -72,6 +72,10 @@ function blob_fixup() {
             ;;
         vendor/lib*/hw/audio.primary.mt6885.so)
             "${PATCHELF}" --replace-needed "libmedia_helper.so" "libmedia_helper-v30.so" "${2}"
+            "${PATCHELF}" --replace-needed "libalsautils.so" "libalsautils-v30.so" "${2}"
+            ;;
+        vendor/lib*/hw/audio.usb.mt6885.so)
+            "${PATCHELF}" --replace-needed "libalsautils.so" "libalsautils-v30.so" "${2}"
             ;;
         vendor/lib*/libudf.so)
             "${PATCHELF}" --replace-needed "libunwindstack.so" "libunwindstack-v30.so" "${2}"
