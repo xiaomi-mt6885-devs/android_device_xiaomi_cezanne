@@ -249,24 +249,14 @@ PRODUCT_PACKAGES += \
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6885 \
-    init.project.rc \
-    init.mt6885.rc \
-    meta_init.rc \
-    init.mt6885.usb.rc \
-    init.ago.rc \
-    factory_init.project.rc \
-    factory_init.connectivity.rc \
-    meta_init.modem.rc \
-    init.aee.rc \
-    init.modem.rc \
-    meta_init.project.rc \
-    multi_init.rc \
-    init.sensor_2_0.rc \
-    init.target.rc \
     init.cezanne.rc \
     init.connectivity.rc \
-    meta_init.connectivity.rc \
-    factory_init.rc \
+    init.modem.rc \
+    init.mt6885.rc \
+    init.mt6885.usb.rc \
+    init.project.rc \
+    init.sensor_2_0.rc \
+    ueventd.mtk.rc
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6885:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6885

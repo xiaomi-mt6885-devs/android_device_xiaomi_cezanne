@@ -4,65 +4,10 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
+// Init configuration files
 prebuilt_etc {
-    name: "init.project.rc",
-    src: "etc/init.project.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.mt6885.rc",
-    src: "etc/init.mt6885.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "meta_init.rc",
-    src: "etc/meta_init.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.mt6885.usb.rc",
-    src: "etc/init.mt6885.usb.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.ago.rc",
-    src: "etc/init.ago.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "factory_init.project.rc",
-    src: "etc/factory_init.project.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "factory_init.connectivity.rc",
-    src: "etc/factory_init.connectivity.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "meta_init.modem.rc",
-    src: "etc/meta_init.modem.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.aee.rc",
-    src: "etc/init.aee.rc",
+    name: "init.connectivity.rc",
+    src: "etc/init.connectivity.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
@@ -75,15 +20,22 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "meta_init.project.rc",
-    src: "etc/meta_init.project.rc",
+    name: "init.mt6885.rc",
+    src: "etc/init.mt6885.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
-    name: "multi_init.rc",
-    src: "etc/multi_init.rc",
+    name: "init.mt6885.usb.rc",
+    src: "etc/init.mt6885.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.project.rc",
+    src: "etc/init.project.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
@@ -96,13 +48,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.target.rc",
-    src: "etc/init.target.rc",
-    sub_dir: "init",
-    system_ext_specific: true,
-}
-
-prebuilt_etc {
     name: "init.cezanne.rc",
     src: "etc/init.cezanne.rc",
     sub_dir: "init/hw",
@@ -110,26 +55,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.connectivity.rc",
-    src: "etc/init.connectivity.rc",
-    sub_dir: "init/hw",
+    name: "ueventd.mtk.rc",
+    filename: "ueventd.rc",
+    src: "etc/ueventd.mtk.rc",
     vendor: true,
 }
 
-prebuilt_etc {
-    name: "meta_init.connectivity.rc",
-    src: "etc/meta_init.connectivity.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "factory_init.rc",
-    src: "etc/factory_init.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
+// fstab
 prebuilt_etc {
     name: "fstab.mt6885",
     src: "etc/fstab.mt6885",

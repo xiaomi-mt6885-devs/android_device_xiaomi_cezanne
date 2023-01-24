@@ -1,5 +1,5 @@
 # MTK project .rc configure
-import init.mi_thermald.rc
+import /vendor/etc/init/init.mi_thermald.rc
 
 import /vendor/etc/init/init.batteryd.rc
 import /vendor/etc/init/init.batterysecret.rc
