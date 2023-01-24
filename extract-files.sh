@@ -70,6 +70,9 @@ function blob_fixup() {
         vendor/lib64/android.hardware.power-service-mediatek.so)
             "${PATCHELF}" --replace-needed "android.hardware.power-V1-ndk_platform.so" "android.hardware.power-V1-ndk.so" "${2}"
             ;;
+        vendor/lib*/hw/audio.primary.mt6885.so)
+            "${PATCHELF}" --replace-needed "libmedia_helper.so" "libmedia_helper-v30.so" "${2}"
+            ;;
         vendor/lib*/libudf.so)
             "${PATCHELF}" --replace-needed "libunwindstack.so" "libunwindstack-v30.so" "${2}"
             ;;
