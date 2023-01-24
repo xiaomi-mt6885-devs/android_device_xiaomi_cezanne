@@ -61,6 +61,9 @@ function blob_fixup() {
         lib/libmtk_vt_service.so)
             "${PATCHELF}" --add-needed "libshim_vtservice.so" "${2}"
             ;;
+        vendor/bin/hw/android.hardware.thermal@2.0-service.mtk)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            ;;
     esac
 }
 
