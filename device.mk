@@ -229,7 +229,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # USB
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.adb.nonblocking_ffs=0
+    ro.adb.nonblocking_ffs=0 \
+    persist.adb.nonblocking_ffs=0
 
 # Wi-Fi
 PRODUCT_COPY_FILES += \
