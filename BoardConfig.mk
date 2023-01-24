@@ -54,6 +54,10 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 # Display
 TARGET_SCREEN_DENSITY := 440
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_xiaomi_cezanne
+TARGET_RECOVERY_DEVICE_MODULES := libinit_xiaomi_cezanne
+
 # Kernel
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
