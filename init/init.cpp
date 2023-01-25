@@ -75,6 +75,9 @@ void vendor_load_properties()
     // Set hardware SKU prop
     property_override("ro.boot.product.hardware.sku", device);
 
+    // Set camera model for EXIF data
+    property_override("persist.vendor.camera.model", model);
+
     // Set dalvik heap configuration
     string heapstartsize, heapgrowthlimit, heapsize, heapminfree,
 			heapmaxfree, heaptargetutilization;
